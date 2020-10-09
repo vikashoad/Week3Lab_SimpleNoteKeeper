@@ -45,7 +45,6 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     
-    String path = getServletContext().getRealPath("/WEB-INF/note.txt");
     getServletContext().getRequestDispatcher("/WEB-INF/viewnote.jsp").forward(request, response);
     
  }
